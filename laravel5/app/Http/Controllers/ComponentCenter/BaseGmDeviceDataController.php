@@ -21,11 +21,11 @@ class BaseGmDeviceDataController extends Controller
     public $xmlElemArray;
 
     /*
-    * 功能：从public文件夹下加载mappingFile.xml配置文件
-    *
-    * $__xmlElemArray
-    * [ ["store_field"=>"", "map_name"=>"", "zh_name"=>"" "data_type"=>"", "byte_seq"=>"", "scale"=>"", "unit"=>""], [~], ...]
-    */
+     * 功能：从public文件夹下加载mappingFile.xml配置文件
+     *
+     * $__xmlElemArray
+     * [ ["store_field"=>"", "map_name"=>"", "zh_name"=>"" "data_type"=>"", "byte_seq"=>"", "scale"=>"", "unit"=>""], [~], ...]
+     */
     public function loadXmlFile($filePath)
     {
         if(file_exists($filePath)){
@@ -53,11 +53,11 @@ class BaseGmDeviceDataController extends Controller
 
 
     /*
- * 功能：从public文件夹下加载mappingFile.xml配置文件，并根据$deviceType获得特定的对象
- *
- * $__xmlElemArray
- * [ ["store_field"=>"", "map_name"=>"", "zh_name"=>"" "data_type"=>"", "byte_seq"=>"", "scale"=>"", "unit"=>""], [~], ...]
- */
+     * 功能：从public文件夹下加载mappingFile.xml配置文件，并根据$deviceType获得特定的对象
+     *
+     * $__xmlElemArray
+     * [ ["store_field"=>"", "map_name"=>"", "zh_name"=>"" "data_type"=>"", "byte_seq"=>"", "scale"=>"", "unit"=>""], [~], ...]
+     */
     public function loadXmlElementWithDeviceType($filePath, $deviceType)
     {
         if(file_exists($filePath)){

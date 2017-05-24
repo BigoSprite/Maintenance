@@ -72,9 +72,10 @@ class Distribution_Room_Controller extends Controller
 
         if(count($info) > 0){
             $retArray = [
-                'status'=>'fail'
+                'status'=>'fail',
+                'isExist'=>'true'
             ];
-        }else{
+        }else{// 数据库不存在该条数据
             DB::table('distributionRoom')->insert(
                 [
                     'serialId' => $serialId,
@@ -87,7 +88,8 @@ class Distribution_Room_Controller extends Controller
                 ]
             );
             $retArray = [
-                'status'=>'success'
+                'status'=>'success',
+                'isExist'=>'false'
             ];
         }
 

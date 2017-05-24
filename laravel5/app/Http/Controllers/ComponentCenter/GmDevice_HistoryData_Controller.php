@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\ComponentCenter;
 
 use Illuminate\Support\Facades\DB;
-
+use App\Http\Controllers\Utility\VerifyHandler;
 
 class GmDevice_HistoryData_Controller extends BaseGmDeviceDataController
 {
@@ -48,6 +48,10 @@ class GmDevice_HistoryData_Controller extends BaseGmDeviceDataController
      */
     public function getHistoryData2Json($deviceType, $gprsid)
     {
+        if(VerifyHandler::getInstance()->isLegal($gprsid) == false){
+            return response(json_encode(["data"=>[]], JSON_UNESCAPED_UNICODE));
+        }
+
         $this->loadXmlElementWithDeviceType('deviceInfoMappingFile.xml', $deviceType);
 
         $deviceDataArr = DB::connection('mysql_cloud')->select('SELECT * FROM gmdevice_'."{$gprsid}");

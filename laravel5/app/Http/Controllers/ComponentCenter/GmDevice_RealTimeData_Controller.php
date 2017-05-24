@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\ComponentCenter;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Utility\VerifyHandler;
 use App\ModelCenter\GmDevice_RealTimeData_Model;
+
 
 class GmDevice_RealTimeData_Controller extends Controller
 {
@@ -44,6 +46,11 @@ class GmDevice_RealTimeData_Controller extends Controller
      */
     public function getRealTimeData2Json($deviceType, $gprsid)
     {
+
+       if(VerifyHandler::getInstance()->isLegal($gprsid) == false){
+           return response(json_encode( ["lastUpdateTime" => null, "data" => []], JSON_UNESCAPED_UNICODE));
+       }
+
         $this->__loadXmlElementWithDeviceType('deviceInfoMappingFile.xml', $deviceType);
 
         //$oneLineDataArray = DB::select("SELECT * FROM gmdevice_realtimedata WHERE gprsID = {$gprsid}");
@@ -83,7 +90,7 @@ class GmDevice_RealTimeData_Controller extends Controller
                 $zhName = (string)$elem["zh_name"];
                 $resultArray["data"][] = ["name" => $zhName, "value" => null];
             }
-            return response(json_encode($resultArray, JSON_UNESCAPED_UNICODE));;
+            return response(json_encode($resultArray, JSON_UNESCAPED_UNICODE));
             //exit("The device info with gprsId =  {$gprsid} doesn't exist in the table of gmdevice_realtimedata!");
         }
 

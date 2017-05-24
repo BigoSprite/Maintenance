@@ -5,7 +5,6 @@ namespace App\Http\Controllers\ComponentCenter;
 use App\Http\Controllers\Controller;
 use App\ModelCenter\GmDevice_Status_Model;
 use Illuminate\Database\Connection;
-use Illuminate\Support\Facades\DB;
 use App\ModelCenter\GmDevice_Information_Model;
 use Illuminate\Support\Facades\Input;
 
@@ -123,7 +122,7 @@ class GmDevice_Information_Controller extends Controller
      * @return：json
      *
      * 响应请求 方法 GET
-     * 对应的路由：http://localhost:8888/api/cloud/deviceList/jinyehotel
+     * 对应的路由：http://localhost:8888/api/content/deviceList/jinyehotel
      */
     public function getDeviceListOfRealEstate($realEstateName)
     {
@@ -173,21 +172,21 @@ class GmDevice_Information_Controller extends Controller
      *
      * 响应请求 方法 POST
      * 对应路由：
-     * http://localhost:8888/api/cloud/deviceRegister
+     * http://localhost:8888/api/content/deviceRegister
      */
     public function registerDeviceInfo(){
 
 //        $input = Input::all();
 //        $deviceInfoModel = GmDevice_Information_Model::create($input);
 //        if($deviceInfoModel != null){
-//            response()->json(['status'=>'success', 200]);
+//            return response()->json(['status'=>'success', 'isExist'=>'true']);
 //        }
-//        return response()->json(['status'=>'fail', 501]);
+//        return response()->json(['status'=>'fail', 'isExist'=>'false']);
 
         $gprsId = Input::get('gprsID');
         $model = GmDevice_Information_Model::where('gprsID', $gprsId)->first();
 
-        if($model == null){
+        if($model == null){// 数据库不存在该条数据
             $deviceInfoModel = new GmDevice_Information_Model;
             $deviceInfoModel->gprsID = Input::get('gprsID');
             $deviceInfoModel->deviceName = Input::get('deviceName');
@@ -205,10 +204,12 @@ class GmDevice_Information_Controller extends Controller
             $deviceInfoModel->addDate = Input::get('addDate');
 
             if($deviceInfoModel->save()){
-                response()->json(['status'=>'success', 200]);
+                return response()->json(['status'=>'success', 'isExist'=>'false'], 200);
+            }else{
+                return response()->json(['status'=>'fail', 'isExist'=>'false'], 200);
             }
         }else{
-            return response()->json(['status'=>'fail', 501]);
+            return response()->json(['status'=>'fail', 'isExist'=>'true'], 200);
         }
     }
 

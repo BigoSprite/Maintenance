@@ -17,33 +17,7 @@ Route::get('/', function(){
 
 Route::group(['prefix'=>'api'],function (){
 
-    Route::group(['prefix'=>'cloud', 'namespace'=>'ComponentCenter'], function(){
-
-        // http://localhost:8888/api/cloud/realEstateInfo/jinyehotel
-        // http://localhost:8888/api/cloud/realEstateInfoList
-        // http://localhost:8888/api/cloud/realEstateRoomInfoList
-        // http://localhost:8888/api/cloud/deviceList/jinyehotel
-        Route::get('realEstateInfo/{realEstateName}', 'RealEstate_Information_Controller@getRealEstateInfo');
-        Route::get('realEstateInfoList', 'RealEstate_Information_Controller@getRealEstateInfoList');
-        Route::get('realEstateRoomInfoList', 'RealEstate_Information_Controller@get_RealEstateAndRoom_InfoList');
-        Route::get('deviceList/{realEstateName}', 'GmDevice_Information_Controller@getDeviceListOfRealEstate');
-
-        Route::post('deviceRegister', 'GmDevice_Information_Controller@registerDeviceInfo');
-
-    });
-
-
     Route::group(['prefix'=>'content', 'namespace'=>'ComponentCenter'], function (){
-
-//        Route::get('deviceInformation','GmDeviceInfoController@getDeviceInfo2Json');
-//        Route::get('deviceTreeData','GmDeviceInfoController@getDeviceTreeData2Json');
-//        Route::get('deviceRealTimeDataTable_headerData/{deviceType}','GmDeviceRealtimeDataController@getTableHeader2Json');
-//        Route::get('deviceRealTimeDataTable_bodyData/{deviceType}/{gprsid}','GmDeviceRealtimeDataController@getRealTimeData2Json')->where('gprsid', '[0-9]+');
-//        Route::get('deviceHistoryDataTable_headerData/{deviceType}','GmDeviceHistoryDataWithIdController@getHistoryDataTableHeader2Json');
-//        Route::get('deviceHistoryDataTable_bodyData/{deviceType}/{gprsid}','GmDeviceHistoryDataWithIdController@getHistoryData2Json')->where('gprsid', '[0-9]+');
-//        Route::get('distributeRoomInfo/{serialId}','DistributionRoomController@getDistributionRoomInfo2Json');
-//        Route::get('distributeRoomList', 'DistributionRoomController@getDistributeRoomList2Json');]
-
 
         // http://localhost:8888/api/content/deviceInformation
         // http://localhost:8888/api/content/deviceTreeData
@@ -56,11 +30,23 @@ Route::group(['prefix'=>'api'],function (){
         Route::get('deviceInformation','GmDevice_Information_Controller@getDeviceInfoList2Json');
         Route::get('deviceTreeData','GmDevice_Information_Controller@getDeviceTreeData2Json');
         Route::get('deviceRealTimeDataTable_headerData/{deviceType}','GmDevice_RealTimeData_Controller@getTableHeader2Json');
-        Route::get('deviceRealTimeDataTable_bodyData/{deviceType}/{gprsid}','GmDevice_RealTimeData_Controller@getRealTimeData2Json')->where('gprsid', '[0-9]+');
+        Route::get('deviceRealTimeDataTable_bodyData/{deviceType}/{gprsid}','GmDevice_RealTimeData_Controller@getRealTimeData2Json');//->where('gprsid', '[0-9]+');
         Route::get('deviceHistoryDataTable_headerData/{deviceType}','GmDevice_HistoryData_Controller@getHistoryDataTableHeader2Json');
-        Route::get('deviceHistoryDataTable_bodyData/{deviceType}/{gprsid}','GmDevice_HistoryData_Controller@getHistoryData2Json')->where('gprsid', '[0-9]+');
+        Route::get('deviceHistoryDataTable_bodyData/{deviceType}/{gprsid}','GmDevice_HistoryData_Controller@getHistoryData2Json');//->where('gprsid', '[0-9]+');
         Route::get('distributeRoomInfo/{serialId}','Distribution_Room_Controller@getDistributionRoomInfo2Json');
         Route::get('distributeRoomList', 'Distribution_Room_Controller@getDistributeRoomList2Json');
+
+
+        // http://localhost:8888/api/content/realEstateInfo/jinyehotel
+        // http://localhost:8888/api/content/realEstateInfoList
+        // http://localhost:8888/api/content/realEstateRoomInfoList
+        // http://localhost:8888/api/content/deviceList/jinyehotel
+        Route::get('realEstateInfo/{realEstateName}', 'RealEstate_Information_Controller@getRealEstateInfo');
+        Route::get('realEstateInfoList', 'RealEstate_Information_Controller@getRealEstateInfoList');
+        Route::get('realEstateRoomInfoList', 'RealEstate_Information_Controller@get_RealEstateAndRoom_InfoList');
+        Route::get('deviceList/{realEstateName}', 'GmDevice_Information_Controller@getDeviceListOfRealEstate');
+
+        Route::post('deviceRegister', 'GmDevice_Information_Controller@registerDeviceInfo');
 
 
 //

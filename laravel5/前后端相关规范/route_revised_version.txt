@@ -206,5 +206,5 @@ http://localhost/api/content/deviceList/realEstateName
 
 
 
-注：① http://localhost为本地测试的URL前缀，端口号：；该主机IPv4地址为：192.168.223.1
+注：① http://localhost为本地测试的URL前缀，端口号：8888；该主机IPv4地址为：192.168.2.116
 	② 第4条的历史数据路由中参数0000000001对应jinyehotel数据库（MySql）中id为0000000001的的设备，目前只有该设备历史数据。
