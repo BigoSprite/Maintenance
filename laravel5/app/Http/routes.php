@@ -44,7 +44,7 @@ Route::group(['prefix'=>'api'],function (){
 //        Route::get('distributeRoomInfo/{serialId}','DistributionRoomController@getDistributionRoomInfo2Json');
 //        Route::get('distributeRoomList', 'DistributionRoomController@getDistributeRoomList2Json');]
 
-        // http://221.236.173.192:8888
+
         // http://localhost:8888/api/content/deviceInformation
         // http://localhost:8888/api/content/deviceTreeData
         // http://localhost:8888/api/content/deviceRealTimeDataTable_headerData/US2000
