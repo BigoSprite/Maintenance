@@ -7,10 +7,13 @@
  */
 namespace App\Http\Controllers\ComponentCommon;
 
+use App\Http\Controllers\Utility\DBConnectinHandler;
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
+use App\ModelCenter\User_Information_Model;
 
 class UserInfoController extends Controller
 {
@@ -24,7 +27,14 @@ class UserInfoController extends Controller
         $username = Input::get('username');
         $password = Input::get('password');
 
-        $user = DB::select('SELECT * FROM userinfo WHERE userName = :userName AND loginPassword= :password',
+        $dbInfo = [
+            'dbIp'=>'127.0.0.1',
+            'dbName'=>'hwdevicecloud',
+            'dbUser'=>'root',
+            'dbPassword'=>'root'
+        ];
+        $con = DBConnectinHandler::getInstance()->connection($dbInfo['dbIp'], $dbInfo['dbName'], $dbInfo['dbUser'], $dbInfo['dbPassword']);
+        $user =$con->select('SELECT * FROM userinfo WHERE userName = :userName AND loginPassword = :password',
             [':userName'=>$username, ':password'=>$password]);
 
         if(count($user) > 0){

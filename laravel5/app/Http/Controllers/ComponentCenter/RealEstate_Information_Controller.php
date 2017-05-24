@@ -41,6 +41,7 @@ class RealEstate_Information_Controller extends Controller
         return response(json_encode(['data'=>$resultArray], JSON_UNESCAPED_UNICODE));
     }
 
+
     /*
      * 功能：获取所有的物业信息
      * @return：json
@@ -72,6 +73,51 @@ class RealEstate_Information_Controller extends Controller
         }
 
         return response(json_encode(['data'=>$resultArray], JSON_UNESCAPED_UNICODE));
+    }
+
+    /*
+     * 功能：获取当前物业下的所有配电室
+     * @return：json
+     *
+     * 响应请求 方法 GET
+     * 对应路由：http://localhost:8888/api/content/roomList/jinyehotel
+     */
+    public function getDistributionRoomList($currentRealEstate)
+    {
+       $model = RealEstate_Information_Model::where('dbName', $currentRealEstate)->first();
+        $retArray = array();
+       if($model != null){
+           $realEstateTmp = [
+               'realEstateName'=>$model->realEstateName,
+               'dbName'=>$model->dbName,
+               'dbIp'=>$model->dbIp,
+               'dbPort'=>$model->dbPort,
+               'dbUserName'=>$model->dbUserName,
+               'dbPassword'=>$model->dbPassword
+           ];
+
+           $con = DBConnectinHandler::getInstance()->connection($realEstateTmp['dbIp'], $realEstateTmp['dbName'], $realEstateTmp['dbUserName'], $realEstateTmp['dbPassword']);
+           $roomInfoArray = $con->select('SELECT * FROM distributionroom');
+
+           $tmpArray= array();
+           foreach ($roomInfoArray as $item1) {
+               $tmp = [
+                   'serialId'=>$item1->serialId,
+                   'roomName'=>$item1->roomName,
+                   'description'=>$item1->description,
+                   'address'=>$item1->address,
+                   'productionPro'=>$item1->productionPro,
+                   'telephoneNumber'=>$item1->telephoneNumber,
+                   'installationDate'=>$item1->installationDate
+               ];
+               $tmpArray[] = $tmp;
+           }
+
+           $retArray[] = [
+               'roomInfo'=>$tmpArray
+           ];
+       }
+        return response(json_encode(['realEstate'=>$realEstateTmp['realEstateName'], 'roomList'=>$retArray]));
     }
 
 

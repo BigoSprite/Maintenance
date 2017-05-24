@@ -40,10 +40,12 @@ Route::group(['prefix'=>'api'],function (){
         // http://localhost:8888/api/content/realEstateInfo/jinyehotel
         // http://localhost:8888/api/content/realEstateInfoList
         // http://localhost:8888/api/content/realEstateRoomInfoList
+        // http://localhost:8888/api/content/roomList/jinyehotel
         // http://localhost:8888/api/content/deviceList/jinyehotel
         Route::get('realEstateInfo/{realEstateName}', 'RealEstate_Information_Controller@getRealEstateInfo');
         Route::get('realEstateInfoList', 'RealEstate_Information_Controller@getRealEstateInfoList');
         Route::get('realEstateRoomInfoList', 'RealEstate_Information_Controller@get_RealEstateAndRoom_InfoList');
+        Route::get('roomList/{realEstateName}', 'RealEstate_Information_Controller@get_RealEstateAndRoom_InfoList');
         Route::get('deviceList/{realEstateName}', 'GmDevice_Information_Controller@getDeviceListOfRealEstate');
 
         Route::post('deviceRegister', 'GmDevice_Information_Controller@registerDeviceInfo');

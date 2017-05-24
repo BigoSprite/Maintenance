@@ -1,67 +1,67 @@
-2017-05-23ĞÂÔö¹æ·¶
+2017-05-23æ–°å¢è§„èŒƒ
 
-Â·ÓÉ¼°·µ»ØÖµ¹æ·¶£¬ÈçÏÂ£º	
+è·¯ç”±åŠè¿”å›å€¼è§„èŒƒï¼Œå¦‚ä¸‹ï¼š
 -----------------------------------------------------------------------------
-=======>Database.table£ºhwdevicecloud.realestateinfo
-		Controller£ºComponentCneter\RealEstate_Information_Controller.php	
+=======>Database.tableï¼šhwdevicecloud.realestateinfo
+		Controllerï¼šComponentCneter\RealEstate_Information_Controller.php
 
-1.»ñÈ¡ÎïÒµÃû×ÖÎªrealEstateNameµÄ¡°ÎïÒµĞÅÏ¢¡±£¬Â·ÓÉÎª£º
-	http://localhost:8888/api/cloud/realEstateInfo/realEstateName
-	
-	ÏìÓ¦ÇëÇó GET ·½·¨
-	
-	Â·ÓÉ×îºóÒ»¸ö²ÎÊı£¨Ó¢ÎÄ×Ö·û´®£©Îª¿É±ä²ÎÊı£ºÈçjinyehotel
-	
-	·µ»Øjson£º
+1.è·å–ç‰©ä¸šåå­—ä¸ºrealEstateNameçš„â€œç‰©ä¸šä¿¡æ¯â€ï¼Œè·¯ç”±ä¸ºï¼š
+	http://localhost:8888/api/content/realEstateInfo/realEstateName
+
+	å“åº”è¯·æ±‚ GET æ–¹æ³•
+
+	è·¯ç”±æœ€åä¸€ä¸ªå‚æ•°ï¼ˆè‹±æ–‡å­—ç¬¦ä¸²ï¼‰ä¸ºå¯å˜å‚æ•°ï¼šå¦‚jinyehotel
+
+	è¿”å›jsonï¼š
 
 		{
 			'dbName': '',
 			'realEstateName': '',
-			'address'£º'',
+			'address'ï¼š'',
 			'description': '',
 			'longitude':'',
 			'latitude':'',
-			'isDiscarded':''		
+			'isDiscarded':''
 		}
-	
-2.»ñÈ¡ËùÓĞµÄ¡°ÎïÒµĞÅÏ¢¡±£¬Â·ÓÉÎª£º 
-	http://localhost:8888/api/cloud/realEstateInfoList
-	
-	ÏìÓ¦ÇëÇó GET ·½·¨
 
-	·µ»Øjson£º
+2.è·å–æ‰€æœ‰çš„â€œç‰©ä¸šä¿¡æ¯â€ï¼Œè·¯ç”±ä¸ºï¼š
+	http://localhost:8888/api/content/realEstateInfoList
+
+	å“åº”è¯·æ±‚ GET æ–¹æ³•
+
+	è¿”å›jsonï¼š
 	{
 		'data':[
-			// µÚÒ»¸öÎïÒµĞÅÏ¢
+			// ç¬¬ä¸€ä¸ªç‰©ä¸šä¿¡æ¯
 			{
 				'dbName': '',
 				'realEstateName': '',
-				'address'£º'',
+				'address'ï¼š'',
 				'description': '',
 				'longitude':'',
 				'latitude':'',
-				'isDiscarded':''		
-				
+				'isDiscarded':''
+
 			},
 			...
-			
+
 		]
 	}
-	
-	
-3.»ñÈ¡¡°ËùÓĞÎïÒµĞÅÏ¢£¬¼°ÆäÏÂÃæµÄËùÓĞÅäµçÊÒĞÅÏ¢¡±£¬Â·ÓÉÎª£º 
-	http://localhost:8888/api/cloud/realEstateRoomInfoList
-	
-	ÏìÓ¦ÇëÇó GET ·½·¨
 
-	·µ»Øjson£º
+
+3.è·å–â€œæ‰€æœ‰ç‰©ä¸šä¿¡æ¯ï¼ŒåŠå…¶ä¸‹é¢çš„æ‰€æœ‰é…ç”µå®¤ä¿¡æ¯â€ï¼Œè·¯ç”±ä¸ºï¼š
+	http://localhost:8888/api/content/realEstateRoomInfoList
+
+	å“åº”è¯·æ±‚ GET æ–¹æ³•
+
+	è¿”å›jsonï¼š
 	{
 		'data':[
-			// µÚÒ»¸öÎïÒµ¼°ÏÂÃæµÄÅäµçÊÒĞÅÏ¢
+			// ç¬¬ä¸€ä¸ªç‰©ä¸šåŠä¸‹é¢çš„é…ç”µå®¤ä¿¡æ¯
 			{
-				'realEstate':'½ğÒ¶´óÏÃ',
+				'realEstate':'é‡‘å¶å¤§å¦',
 				'roomInfo':[
-					{	
+					{
 						'serialId':'',
 						'roomName':'',
 						'description':'',
@@ -70,80 +70,111 @@
 						'telephoneNumber':'',
 						'installationDate':''
 					},
-					...			
+					...
 				]
 			},
-			// µÚ¶ş¸öÎïÒµ¼°ÏÂÃæµÄÅäµçÊÒĞÅÏ¢
+			// ç¬¬äºŒä¸ªç‰©ä¸šåŠä¸‹é¢çš„é…ç”µå®¤ä¿¡æ¯
 			{
-				'realEstate':'¹Ú³Ç»¨Ô°',
+				'realEstate':'å† åŸèŠ±å›­',
 				'roomInfo':[
 					...
 				]
 			},
 			...
-			
+
 		]
 	}
-	
-	
-------------------------------------------------------------------------------	
-=======>Database.table£ºhwdevicecloud.gmdevice_info
-		Controller£ºComponentCneter\GmDevice_Information_Controller.php
-4.»ñÈ¡µ±Ç°Ğ¡Çø£¨realEstate£©µÄËùÓĞµÄÉè±¸ÁĞ±í£¬Â·ÓÉÎª£º 
-	http://localhost:8888/api/cloud/deviceList/realEstateName
-	
-	Â·ÓÉ×îºóÒ»¸ö²ÎÊı£¨Ó¢ÎÄ×Ö·û´®£©Îª¿É±ä²ÎÊı£»×¢ÊÍ£ºrealEstateName¶ÔÓ¦realestateinfo±íÖĞµÄdbName
-	
-	ÏìÓ¦ÇëÇó GET ·½·¨
 
-	·µ»Øjson£º
+3-1.è·å–â€œå½“å‰ç‰©ä¸šä¸‹é¢çš„æ‰€æœ‰é…ç”µå®¤ä¿¡æ¯â€ï¼Œè·¯ç”±ä¸ºï¼š
+	http://localhost:8888/api/content/roomList/realEstateName
+
+	æœ€åä¸€ä¸ªå‚æ•°ï¼ˆè‹±æ–‡å­—ç¬¦ä¸²ï¼‰ä¸ºå¯å˜å‚æ•°ï¼Œå¦‚ï¼šjinyehotel
+	    å³ï¼šhttp://localhost:8888/api/content/roomList/jinyehotel
+
+	å“åº”è¯·æ±‚ GET æ–¹æ³•
+
+	è¿”å›jsonï¼š
+	{
+	    'realEstate':'é‡‘å¶å¤§å¦',
+		'roomList':[
+			// ç¬¬ä¸€ä¸ªé…ç”µå®¤ä¿¡æ¯
+			{
+			     'serialId':'',
+			     'roomName':'',
+			     'description':'',
+			     'address':'',
+			     'productionPro':'',
+			     'telephoneNumber':'',
+			     'installationDate':''
+
+			},
+			// ç¬¬äºŒä¸ªé…ç”µå®¤ä¿¡æ¯
+			{
+			      ...
+			},
+			...
+
+		]
+	}
+
+------------------------------------------------------------------------------
+=======>Database.tableï¼šhwdevicecloud.gmdevice_info
+		Controllerï¼šComponentCneter\GmDevice_Information_Controller.php
+4.è·å–å½“å‰å°åŒºï¼ˆrealEstateï¼‰çš„æ‰€æœ‰çš„è®¾å¤‡åˆ—è¡¨ï¼Œè·¯ç”±ä¸ºï¼š
+	http://localhost:8888/api/content/deviceList/realEstateName
+
+	è·¯ç”±æœ€åä¸€ä¸ªå‚æ•°ï¼ˆè‹±æ–‡å­—ç¬¦ä¸²ï¼‰ä¸ºå¯å˜å‚æ•°ï¼›æ³¨é‡Šï¼šrealEstateNameå¯¹åº”realestateinfoè¡¨ä¸­çš„dbName
+
+	å“åº”è¯·æ±‚ GET æ–¹æ³•
+
+	è¿”å›jsonï¼š
 	{
 		'data': [
 			{
 				'gprsID': '0000000001',
-				'deviceName': '°ºË¼1',
-				'deviceTypeName'£º 'US2000',
-				'distributionRoom': 'Åäµç1',
+				'deviceName': 'æ˜‚æ€1',
+				'deviceTypeName'ï¼š 'US2000',
+				'distributionRoom': 'é…ç”µ1',
 			}
 		],
 		'status': 'success'
-	} 
+	}
 
-	
-	===>¶ÔÓ¦ÓÚÖ®Ç°µÄÇëÇó£»9 »ñÈ¡µ±Ç°Ğ¡ÇøµÄËùÓĞµÄÉè±¸ÁĞ±í
 
-		get ·½·¨
+	===>å¯¹åº”äºä¹‹å‰çš„è¯·æ±‚ï¼›9 è·å–å½“å‰å°åŒºçš„æ‰€æœ‰çš„è®¾å¤‡åˆ—è¡¨
+
+		get æ–¹æ³•
 		http://localhost:8888/api/content/deviceList/locationName
 
-		×îºóÒ»¸ö²ÎÊıÎª¿É±ä²ÎÊı ´ú±íĞ¡ÇøÃû³Æ
+		æœ€åä¸€ä¸ªå‚æ•°ä¸ºå¯å˜å‚æ•° ä»£è¡¨å°åŒºåç§°
 
-		·µ»ØÊı¾İ¸ñÊ½
- 
+		è¿”å›æ•°æ®æ ¼å¼
+
 		{
 			data: [
 				{
 					gprsID: '0000000001',
-					deviceName: '°ºË¼1',
-					deviceTypeName£º 'US2000',
-					distributionRoom: 'Åäµç1',
+					deviceName: 'æ˜‚æ€1',
+					deviceTypeNameï¼š 'US2000',
+					distributionRoom: 'é…ç”µ1',
 				}
 			],
 			status: 'success'
-		} 
+		}
 
 
-		Èç¹û´æÔÚ´ËÅäµçÊÒ ÄÇÃ´status Îªsuccess
-		·´Ö®Èç¹û²»´æÔÚ ÄÇÃ´status Îª fail
-	
-5. ×¢²áÉè±¸£¬Â·ÓÉÎª£º
-	http://localhost:8888/api/cloud/deviceRegister
-	
-	ÏìÓ¦ÇëÇó POST ·½·¨
-	ÇëÇó·¢À´µÄjsonÊı¾İ£º
+		å¦‚æœå­˜åœ¨æ­¤é…ç”µå®¤ é‚£ä¹ˆstatus ä¸ºsuccess
+		åä¹‹å¦‚æœä¸å­˜åœ¨ é‚£ä¹ˆstatus ä¸º fail
+
+5. æ³¨å†Œè®¾å¤‡ï¼Œè·¯ç”±ä¸ºï¼š
+	http://localhost:8888/api/content/deviceRegister
+
+	å“åº”è¯·æ±‚ POST æ–¹æ³•
+	è¯·æ±‚å‘æ¥çš„jsonæ•°æ®ï¼š
 	{
 		'gprsID':'000000001',
-		'deviceName':'°ºË¼ÊıÏÔ1',
-		'deviceTypeName':'US2000'£¬
+		'deviceName':'æ˜‚æ€æ•°æ˜¾1',
+		'deviceTypeName':'US2000'ï¼Œ
 		'dataBaseName':'jinyehotel',
 		'roomId':'0',
 		'protocolVersion':'1',
@@ -157,7 +188,7 @@
 		'addDate':'2017-01-11 00:00:00'
 	}
 
-	·µ»Øjson£º
+	è¿”å›jsonï¼š
 	{
 		'status': 'success' OR 'fail'
 	} 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\ComponentCenter;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Utility\DBConnectinHandler;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;

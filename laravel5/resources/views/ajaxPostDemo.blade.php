@@ -19,9 +19,9 @@
 //                url:'ajaxPostUrl',
 //                url:'http://221.236.173.192:8888/cors/test',
 //                url:'http://221.236.173.192:8888/ajaxPostUrl',
-//                url:'http://221.236.173.192:8888/api/admin/login',
 //                url:'http://221.236.173.192:8888/api/admin/distributeRoomRegister',
-//                data:{'username':"admin", 'password':'admin'},
+                url:'api/admin/login',
+                data:{'username':"admin", 'password':'admin'},
 //                data:{
 //                    'serialId':"5",
 //                    'roomName':'配电室5',
@@ -42,33 +42,23 @@
 //                    'addDate':'2015-01-11'
 //                },
 
-                  url:'api/cloud/deviceRegister',
-                  data:{
-                      'gprsID':'000000001',
-                      'deviceName':'昂思数显1',
-                      'deviceTypeName':'US2000',
-                      'dataBaseName':'jinyehotel',
-                      'roomId':'0',
-                      'protocolVersion':'1',
-                      'protocolRemark':'1',
-                      'mobileNumber':'17088176258',
-                      'longitude':'0.000000',
-                      'latitude':'0.0000000',
-                      'installDirection':'1',
-                      'controllerAddress':'test',
-                      'isDiscarded':'0',
-                      'addDate':'2017-01-11 00:00:00'
-        },
-
-
-
-
-
-
-
-
-
-
+//                  url:'api/cloud/deviceRegister',
+//                  data:{
+//                      'gprsID':'000000001',
+//                      'deviceName':'昂思数显1',
+//                      'deviceTypeName':'US2000',
+//                      'dataBaseName':'jinyehotel',
+//                      'roomId':'0',
+//                      'protocolVersion':'1',
+//                      'protocolRemark':'1',
+//                      'mobileNumber':'17088176258',
+//                      'longitude':'0.000000',
+//                      'latitude':'0.0000000',
+//                      'installDirection':'1',
+//                      'controllerAddress':'test',
+//                      'isDiscarded':'0',
+//                      'addDate':'2017-01-11 00:00:00'
+//        },
                 dataType: 'json',
 //                headers: {
 //                    'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
