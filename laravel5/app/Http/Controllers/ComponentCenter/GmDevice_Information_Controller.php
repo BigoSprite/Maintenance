@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\ComponentCenter;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Utility\DBConnectinHandler;
+use App\Http\Controllers\Utility\StringHandler;
 use App\ModelCenter\GmDevice_Status_Model;
 use Illuminate\Database\Connection;
 use App\ModelCenter\GmDevice_Information_Model;
@@ -140,9 +142,9 @@ class GmDevice_Information_Controller extends Controller
         $resultArray = [];
         if(count($deviceInfoModelArray) > 0){
             // -----------------------------动态的选择要连接的数据库
-            $dsn = "mysql:host=localhost;dbname={$realEstateName}";
-            $db = new \PDO($dsn, 'root', 'root' );
-            $con = new Connection($db);
+            $con = DBConnectinHandler::getInstance()
+                ->connection('localhost', $realEstateName, 'root', 'root');
+
 
             foreach ($deviceInfoModelArray as $item) {
 
@@ -152,7 +154,7 @@ class GmDevice_Information_Controller extends Controller
 
                 if($roomName != null) {
                     $deviceInfoArray = [
-                        'gprsID' => $item->gprsID,
+                        'gprsID' => StringHandler::getInstance()->int2str_tenLength($item->gprsID),
                         'deviceName' => $item->deviceName,
                         'deviceTypeName' => $item->deviceTypeName,
                         'distributionRoom' => $roomName[0]->roomName
@@ -228,7 +230,7 @@ class GmDevice_Information_Controller extends Controller
 
             // 构造临时数组
             $tmp_array = [
-                "gprsID"=> $item->gprsID,
+                "gprsID"=> StringHandler::getInstance()->int2str_tenLength($item->gprsID),
                 "deviceName"=>$item->deviceName,
                 "deviceTypeName"=>$item->deviceTypeName,
                 "roomId"=>$item->roomId,
@@ -253,7 +255,7 @@ class GmDevice_Information_Controller extends Controller
 
         foreach ($statusModelArray as $item) {
             // 获得表中字段的值
-            $gprsID = $item->gprsID;
+            $gprsID = StringHandler::getInstance()->int2str_tenLength($item->gprsID);
             $isLogin = $item->isLogin;
             $lastLoginTime = $item->lastLoginTime;
             $alarmFlag = $item->alarmFlag;
