@@ -48,7 +48,12 @@ Route::group(['prefix'=>'api'],function (){
         Route::get('roomList/{realEstateName}', 'RealEstate_Information_Controller@get_RealEstateAndRoom_InfoList');
         Route::get('deviceList/{realEstateName}', 'GmDevice_Information_Controller@getDeviceListOfRealEstate');
 
-        Route::post('deviceRegister', 'GmDevice_Information_Controller@registerDeviceInfo');
+
+
+
+        // http://localhost:8888/api/content/verifyGprsID/0000000001
+        Route::get('verifyGprsID/{gprsid}', 'GmDevice_Information_Controller@verifyGprsID');
+
 
 
 //
@@ -69,6 +74,7 @@ Route::group(['prefix'=>'api'],function (){
 
         Route::post('distributeRoomRegister', 'ComponentCenter\Distribution_Room_Controller@registerDistributionRoom');
 
+        Route::post('deviceRegister', 'ComponentCenter\GmDevice_Information_Controller@registerDeviceInfo');
     });
 });
 

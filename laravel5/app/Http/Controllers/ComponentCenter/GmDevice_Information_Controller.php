@@ -18,6 +18,20 @@ class GmDevice_Information_Controller extends Controller
         $this->__initGmDeviceStatusArray();
     }
 
+    public function verifyGprsID($gprsId)
+    {
+        $ret = [
+            'isExist'=>'false'
+        ];
+        $model = GmDevice_Information_Model::where('gprsID', $gprsId)->first();
+        if($model != null){
+            $ret['isExist'] = 'true';
+        }
+
+        return response(json_encode($ret), JSON_UNESCAPED_UNICODE);
+    }
+
+
     /*
      * 功能：获取全部设备的信息
      * @return：json

@@ -167,7 +167,7 @@
 		反之如果不存在 那么status 为 fail
 
 5. 注册设备，路由为：
-	http://localhost:8888/api/content/deviceRegister
+	http://localhost:8888/api/admin/deviceRegister
 
 	响应请求 POST 方法
 	请求发来的json数据：
@@ -183,7 +183,7 @@
 		'longitude':'0.000000',
 		'latitude':'0.0000000',
 		'installDirection':'1',
-		'controllerAddress':'test',
+		'controllerAddress':'0',
 		'isDiscarded':'0',
 		'addDate':'2017-01-11 00:00:00'
 	}
@@ -192,9 +192,19 @@
 	{
 		'status': 'success' OR 'fail'
 	} 
-	
-	
-	
-	
+
+
+6. 判断gprsID是否已存在
+
+    http://localhost:8888/api/content/verifyGprsID/0000000001
+
+    响应请求 GET 方法
+
+    最后一个参数为可变参数，代表设备gprsID
+
+	返回json：
+    {
+    	'isExist': 'true' OR 'false'
+    }
 
 	

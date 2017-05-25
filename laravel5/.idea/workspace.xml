@@ -26,49 +26,13 @@
     <favorites_list name="laravel5" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding>
-                <element signature="e#6#384#0#PHP" expanded="true" />
-                <element signature="e#3236#3238#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GmDevice_Information_Controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ComponentCenter/GmDevice_Information_Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="143" column="56" lean-forward="true" selection-start-line="143" selection-start-column="56" selection-end-line="143" selection-end-column="56" />
-              <folding>
-                <element signature="e#56#92#0#PHP" expanded="true" />
-                <element signature="e#423#550#0#PHP" expanded="false" />
-                <element signature="e#637#787#0#PHP" expanded="false" />
-                <element signature="e#873#3689#0#PHP" expanded="false" />
-                <element signature="e#2648#2655#0#PHP" expanded="false" />
-                <element signature="e#5897#7838#0#PHP" expanded="false" />
-                <element signature="e#7931#8900#0#PHP" expanded="false" />
-                <element signature="e#8906#10088#0#PHP" expanded="false" />
-                <element signature="e#10094#10342#0#PHP" expanded="false" />
-                <marker date="1495633020042" expanded="true" signature="4804:4858" ph="SELECT roomN... distributionroom" />
-                <marker date="1495633020042" expanded="true" signature="4944:4998" ph="SELECT roomN... distributionroom" />
-                <marker date="1495633020042" expanded="true" signature="5063:5117" ph="SELECT roomN... distributionroom" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="package_json" />
       </list>
     </option>
   </component>
@@ -86,8 +50,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/test.php" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/public/post.html" />
         <option value="$PROJECT_DIR$/resources/views/login.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" />
@@ -117,7 +79,6 @@
         <option value="$PROJECT_DIR$/app/ModelCenter/GmDevice_RealTimeData_Model.php" />
         <option value="$PROJECT_DIR$/app/ModelCenter/Distribution_Room_Model.php" />
         <option value="$PROJECT_DIR$/app/ModelCenter/RealEstate_Information_Model.php" />
-        <option value="$PROJECT_DIR$/app/ModelCenter/GmDevice_Information_Model.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Utility/DBConnectinHandler.php" />
         <option value="$PROJECT_DIR$/.myConfig" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -133,10 +94,13 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/ComponentCenter/RealEstate_Information_Controller.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ComponentCommon/UserInfoController.php" />
         <option value="$PROJECT_DIR$/resources/views/ajaxPostDemo.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Utility/StringHandler.php" />
+        <option value="$USER_HOME$/Desktop/p.php" />
+        <option value="$PROJECT_DIR$/app/ModelCenter/GmDevice_Information_Model.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ComponentCenter/GmDevice_Information_Controller.php" />
         <option value="$PROJECT_DIR$/前后端相关规范/路由规范/新增路由.txt" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Utility/StringHandler.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ComponentCenter/GmDevice_Information_Controller.php" />
+        <option value="$PROJECT_DIR$/前后端相关规范/package.json" />
       </list>
     </option>
   </component>
@@ -174,8 +138,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -198,6 +162,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="前后端相关规范" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel5" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -217,28 +195,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel5" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -412,11 +368,15 @@
       <workItem from="1495613126031" duration="5478000" />
       <workItem from="1495622245113" duration="483000" />
       <workItem from="1495624251856" duration="4063000" />
+      <workItem from="1495638246383" duration="1597000" />
+      <workItem from="1495675268428" duration="380000" />
+      <workItem from="1495681865757" duration="726000" />
+      <workItem from="1495696300528" duration="1701000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277270000" />
+    <option name="totallyTimeSpent" value="281674000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -428,10 +388,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15959005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18960468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2318612" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -464,8 +424,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/ModelCenter/AssetInfoModel.php" />
-    <entry file="file://$PROJECT_DIR$/app/ModelCenter/GmDeviceInfoModel.php" />
     <entry file="file://$PROJECT_DIR$/app/ModelCenter/Asset_Information_Model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -555,7 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-419">
           <caret line="372" column="13" lean-forward="false" selection-start-line="372" selection-start-column="13" selection-end-line="372" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -580,13 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/ModelCenter/GmDevice_Information_Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1518">
@@ -606,13 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.myConfig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -645,23 +588,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/前后端相关规范/插入或更新数据时后端返回状态规范.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ComponentCenter/GmDevice_RealTimeData_Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="e#56#92#0#PHP" expanded="false" />
-            <element signature="e#1221#3370#0#PHP" expanded="false" />
-            <element signature="e#3617#4615#0#PHP" expanded="false" />
-            <element signature="e#4849#6598#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -669,12 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="603">
           <caret line="48" column="61" lean-forward="false" selection-start-line="48" selection-start-column="61" selection-end-line="48" selection-end-column="61" />
-          <folding>
-            <element signature="e#56#90#0#PHP" expanded="false" />
-            <element signature="e#425#1088#0#PHP" expanded="false" />
-            <element signature="e#1250#2805#0#PHP" expanded="false" />
-            <marker date="1495609516524" expanded="true" signature="1626:1649" ph="SELECT * FRO... gmdevice_" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -682,9 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="e#357#1200#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,11 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="e#231#321#0#PHP" expanded="false" />
-            <element signature="e#570#1562#0#PHP" expanded="false" />
-            <element signature="e#1807#3551#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -704,19 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
           <caret line="70" column="18" lean-forward="true" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
-          <folding>
-            <element signature="e#329#1255#0#PHP" expanded="false" />
-            <element signature="e#1348#2197#0#PHP" expanded="false" />
-            <element signature="e#2279#3315#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="1689" column="21" lean-forward="false" selection-start-line="1689" selection-start-column="16" selection-end-line="1689" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,17 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#56#92#0#PHP" expanded="true" />
-            <element signature="e#452#1164#0#PHP" expanded="false" />
-            <element signature="e#1345#1667#0#PHP" expanded="false" />
-            <element signature="e#1843#3167#0#PHP" expanded="false" />
-            <element signature="e#3188#3936#0#PHP" expanded="false" />
-            <element signature="e#3970#5863#0#PHP" expanded="false" />
-            <marker date="1495616732007" expanded="true" signature="536:583" ph="SELECT seria... distributionRoom" />
-            <marker date="1495616732007" expanded="true" signature="2289:2345" ph="SELECT seria... distributionRoom" />
-            <marker date="1495616732007" expanded="true" signature="4833:4860" ph="SELECT * FRO... gmdevice_type" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -784,24 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="96" column="13" lean-forward="false" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
-          <folding>
-            <element signature="e#56#92#0#PHP" expanded="true" />
-            <element signature="e#484#1469#0#PHP" expanded="false" />
-            <element signature="e#1620#2648#0#PHP" expanded="false" />
-            <element signature="e#2286#2324#0#PHP" expanded="false" />
-            <element signature="e#4517#6383#0#PHP" expanded="false" />
-            <element signature="e#6471#7595#0#PHP" expanded="false" />
-            <element signature="e#7680#8688#0#PHP" expanded="false" />
-            <marker date="1495618030125" expanded="true" signature="3554:3584" ph="SELECT * FRO... distributionroom" />
-            <marker date="1495618030125" expanded="true" signature="5462:5492" ph="SELECT * FRO... distributionroom" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/前后端相关规范/路由规范/新增路由.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="79" column="23" lean-forward="true" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -809,7 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -817,47 +690,91 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/p.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Utility/StringHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="2807" column="7" lean-forward="true" selection-start-line="2807" selection-start-column="7" selection-end-line="2807" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.myConfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前后端相关规范/插入或更新数据时后端返回状态规范.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Utility/StringHandler.php">
+    <entry file="file://$PROJECT_DIR$/前后端相关规范/路由规范/新增路由.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="115">
+          <caret line="5" column="67" lean-forward="true" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ComponentCenter/GmDevice_Information_Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="143" column="56" lean-forward="true" selection-start-line="143" selection-start-column="56" selection-end-line="143" selection-end-column="56" />
+        <state relative-caret-position="138">
+          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding>
             <element signature="e#56#92#0#PHP" expanded="true" />
             <element signature="e#423#550#0#PHP" expanded="false" />
-            <element signature="e#637#787#0#PHP" expanded="false" />
-            <element signature="e#873#3689#0#PHP" expanded="false" />
-            <element signature="e#2648#2655#0#PHP" expanded="false" />
-            <element signature="e#5897#7838#0#PHP" expanded="false" />
-            <element signature="e#7931#8900#0#PHP" expanded="false" />
-            <element signature="e#8906#10088#0#PHP" expanded="false" />
-            <element signature="e#10094#10342#0#PHP" expanded="false" />
-            <marker date="1495633020042" expanded="true" signature="4804:4858" ph="SELECT roomN... distributionroom" />
-            <marker date="1495633020042" expanded="true" signature="4944:4998" ph="SELECT roomN... distributionroom" />
-            <marker date="1495633020042" expanded="true" signature="5063:5117" ph="SELECT roomN... distributionroom" />
+            <element signature="e#977#1127#0#PHP" expanded="false" />
+            <element signature="e#1213#4029#0#PHP" expanded="false" />
+            <element signature="e#2988#2995#0#PHP" expanded="false" />
+            <element signature="e#6237#8178#0#PHP" expanded="false" />
+            <element signature="e#9246#10428#0#PHP" expanded="false" />
+            <element signature="e#10434#10682#0#PHP" expanded="false" />
+            <marker date="1495682425227" expanded="true" signature="5144:5198" ph="SELECT roomN... distributionroom" />
+            <marker date="1495682425227" expanded="true" signature="5284:5338" ph="SELECT roomN... distributionroom" />
+            <marker date="1495682425227" expanded="true" signature="5403:5457" ph="SELECT roomN... distributionroom" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ModelCenter/GmDevice_Information_Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="1081">
+          <caret line="76" column="55" lean-forward="false" selection-start-line="76" selection-start-column="55" selection-end-line="76" selection-end-column="55" />
           <folding>
             <element signature="e#6#384#0#PHP" expanded="true" />
-            <element signature="e#3236#3238#0#PHP" expanded="false" />
+            <element signature="e#3309#3311#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前后端相关规范/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
